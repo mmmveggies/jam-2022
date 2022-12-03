@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>2021</title>
+	<style>
+		body {
+			background: #d63447;
+		}
+
+		* {
+			font-family: Helvetica, sans-serif;
+
+		}
+
+		h2 {
+			text-align: center;
+			color: #f6eedf;
+		}
+
+		h3,
+		h5 {
+			margin: 0.25em;
+		}
+
+		section {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+			grid-gap: 2rem;
+		}
+
+		#recipes+section {
+			grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+		}
+
+		#pictures+section {
+			display: block;
+			column-count: 2;
+			column-gap: 0;
+			line-height: 0;
+		}
+
+		@media (max-width: 1200px) {
+			#pictures+section {
+				column-count: 4;
+			}
+		}
+
+		@media (max-width: 1000px) {
+			#pictures+section {
+				column-count: 3;
+			}
+		}
+
+		@media (max-width: 800px) {
+			#pictures+section {
+				column-count: 2;
+			}
+		}
+
+		@media (max-width: 400px) {
+			#pictures+section {
+				column-count: 1;
+			}
+		}
+
+		#pictures+section img {
+			padding: 2px;
+			border: none;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			background: rgba(0, 0, 0, 0.4);
+		}
+
+		#pictures+section article {
+			padding: 0;
+			background: 0;
+			border: none;
+		}
+
+		article {
+			padding: 1em;
+			background: #d1cebd;
+			border-radius: 4px;
+		}
+
+		img {
+			box-sizing: border-box;
+			width: 100%;
+			max-height: 80vh;
+			object-fit: cover;
+			border: 4px solid black;
+		}
+
+		#recipes+section img {
+			max-height: 50vh;
+		}
+
+		table {
+			width: 100%;
+		}
+
+		th {
+			padding-top: 1em;
+			font-size: larger;
+		}
+
+		td {
+			padding: 0 0.25em;
+			line-height: 1.4;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+		}
+
+		td:nth-child(1),
+		td:nth-child(2) {
+			width: 0;
+			white-space: nowrap;
+		}
+
+		td:nth-child(1) {
+			text-align: right;
+		}
+
+		ul {
+			font-size: smaller;
+		}
+
+		ol {
+			padding-top: 1em;
+		}
+
+		figure {
+			margin: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<h2 id="books">Recommended Books</h2>
+	<section>
+		<article>
+			<img
+				src="https://prodimage.images-bn.com/pimages/9780143036678_p0_v1_s600x595.jpg" />
+			<h3>Marriage, a History: From Obedience to Intimacy or How Love Conquered Marriage</h3>
+			<h5>Stephanie Coontz</h5>
+			<ul>
+				<li>Nonfiction</li>
+				<li>Sociology</li>
+				<li>History</li>
+			</ul>
+		</article>
+		<article>
+			<img
+				src="https://prodimage.images-bn.com/pimages/9781250790293_p0_v2_s600x595.jpg" />
+			<h3>Summer Sons</h3>
+			<h5>Lee Mandelo</h5>
+			<ul>
+				<li>Supernatural</li>
+				<li>Thriller</li>
+			</ul>
+		</article>
+		<article>
+			<img
+				src="https://pushkinpress.com/wp-content/uploads/2022/10/getimage-1228.jpeg" />
+			<h3>The Secret Life of Church Ladies</h3>
+			<h5>Deesha Philyaw</h5>
+			<ul>
+				<li>Short story</li>
+				<li>Literary fiction</li>
+			</ul>
+		</article>
+	</section>
+
+	<h2 id="recipes">Recommended Recipes</h2>
+	<section>
+		<article>
+			<h3>Easy Vegan Recipe: One-Pot Chili Macaroni</h3>
+			<h5>
+				<a href="https://thebeet.com/one-pot-vegan-chili-macaroni">
+					The Beet
+				</a>
+			</h5>
+			<img
+				src="https://townsquare.media/site/959/files/2021/11/attachment-IMG_7745.jpg" />
+		</article>
+		<article>
+			<h3>Chickpea Noodle Soup</h3>
+			<h5>
+				<a href="https://cookieandkate.com/chickpea-noodle-soup-recipe/">
+					COOKIE+kate
+				</a>
+			</h5>
+			<img
+				src="https://cookieandkate.com/images/2019/02/chickpea-noodle-soup-recipe-2-768x1154.jpg" />
+		</article>
+		<article>
+			<h3>Easy One Pot Lasagna</h3>
+			<h5>
+				<a href="https://damndelicious.net/2014/12/27/easy-one-pot-lasagna/">
+					Damn Delicious
+				</a>
+			</h5>
+			<img
+				src="https://s23209.pcdn.co/wp-content/uploads/2014/12/IMG_4336edit.jpg" />
+		</article>
+	</section>
+
+	<h2 id="pictures">Pictures</h2>
+	<section>
+		<img src="./media/01.jpg" />
+		<img src="./media/02.jpg" />
+		<img src="./media/03.png" />
+		<img src="./media/04.jpg" />
+		<img src="./media/05.jpg" />
+		<img src="./media/06.jpg" />
+		<img src="./media/07.jpg" />
+		<img src="./media/08.jpg" />
+		<img src="./media/09.jpg" />
+		<img src="./media/10.jpg" />
+		<img src="./media/11.jpg" />
+		<img src="./media/12.jpg" />
+		<img src="./media/13.jpg" />
+		<img src="./media/14.jpg" />
+		<img src="./media/15.jpg" />
+		<img src="./media/16.jpg" />
+		<img src="./media/17.jpg" />
+		<img src="./media/18.jpg" />
+		<img src="./media/19.jpg" />
+		<img src="./media/20.jpg" />
+		<img src="./media/21.jpg" />
+		<img src="./media/22.jpg" />
+		<img src="./media/23.jpg" />
+		<img src="./media/24.jpg" />
+		<img src="./media/25.jpg" />
+		<img src="./media/26.jpg" />
+		<img src="./media/27.jpg" />
+		<img src="./media/28.jpg" />
+		<img src="./media/29.jpg" />
+		<img src="./media/30.jpg" />
+		<img src="./media/31.jpg" />
+		<img src="./media/32.jpg" />
+		<img src="./media/33.jpg" />
+		<img src="./media/34.jpg" />
+		<img src="./media/35.jpg" />
+		<img src="./media/36.jpg" />
+	</section>
+</body>
+
+</html>
